@@ -1,0 +1,137 @@
+
+.parents-blog {
+    background-color: #eaf1f6;
+    width: 100%;
+    min-height: 700px;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  .feedback-blog p {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  .feedback-blog h2 {
+    margin: 20px 0;
+    font-size: 2.5rem;
+    color: #1f465d;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .carousel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin: 30px auto;
+    max-width: 1200px;
+    overflow: hidden;
+  }
+  
+  .cards-container {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .card {
+    flex: 0 0 calc(25% - 20px);
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transform: scale(1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card p {
+    margin: 10px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .card .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1f465d;
+  }
+  
+  
+  .arrow-1 {
+    background-color: #1f465d;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .arrow-1:hover {
+    background-color: #163544;
+    transform: scale(1.2);
+  }
+  
+  
+  @media (max-width: 1024px) {
+    .card {
+      flex: 0 0 calc(33.33% - 20px);
+    }
+  
+    .feedback-blog h2 {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      flex: 0 0 calc(50% - 20px);
+    }
+  
+    .arrow-1 {
+      width: 40px;
+      height: 40px;
+      font-size: 1.2rem;
+    }
+  
+    .feedback-blog h2 {
+      font-size: 1.8rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      flex: 0 0 calc(100% - 20px);
+    }
+  
+    .arrow-1 {
+      width: 35px;
+      height: 35px;
+      font-size: 1rem;
+    }
+  
+    .feedback-blog h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
